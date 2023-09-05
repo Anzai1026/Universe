@@ -3,7 +3,7 @@ import sqlite3
 import hashlib
 from PIL import Image
 
-img = Image.open('宇宙人.jpeg')
+img = Image.open('Universe.jpeg')
 
 st.set_page_config(page_title='Universe', page_icon=img)
 
@@ -45,7 +45,7 @@ def get_memos(username):
 
 def main():
 
-    st.title("Universeログイン")
+    st.title("Universe")
 
     menu = ["ホーム","ログイン","サインアップ"]
     choice = st.sidebar.selectbox("メニュー",menu)
