@@ -8,7 +8,7 @@ img = Image.open('宇宙人.jpeg')
 st.set_page_config(page_title='Universe', page_icon=img)
 
 conn = sqlite3.connect('database.db')
-c = conn.cursor()
+c = conn.cursor() 
 
 def make_hashes(password):
     return hashlib.sha256(str.encode(password)).hexdigest()
